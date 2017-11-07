@@ -132,6 +132,12 @@ object Dependencies {
     )
   )
 
+  val Jena = Seq(
+    libraryDependencies ++= Seq(
+      "org.apache.jena" % "apache-jena-libs" % "3.5.0" pomOnly() // ApacheV2
+    )
+  )
+
   val Jms = Seq(
     libraryDependencies ++= Seq(
       "javax.jms" % "jms" % "1.1" % Provided, // CDDL + GPLv2

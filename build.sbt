@@ -15,6 +15,7 @@ lazy val alpakka = project
     googleCloudPubSub,
     hbase,
     ironmq,
+    jena,
     jms,
     kinesis,
     mqtt,
@@ -93,6 +94,8 @@ lazy val googleCloudPubSub = alpakkaProject(
 lazy val hbase = alpakkaProject("hbase", Dependencies.HBase, fork in Test := true)
 
 lazy val ironmq = alpakkaProject("ironmq", Dependencies.IronMq)
+
+lazy val jena = alpakkaProject("jena", Dependencies.Jena)
 
 lazy val jms = alpakkaProject("jms", Dependencies.Jms, parallelExecution in Test := false)
 
